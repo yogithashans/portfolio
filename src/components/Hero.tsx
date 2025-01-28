@@ -149,7 +149,7 @@ const Hero = ({focusInput}:{focusInput:()=>void}) => {
               />
               <img 
                 // src="/profile-image.jpg" 
-                src={profileImg}
+                src="/portfolio/IMG_20241225_203428.png"
                 alt="Profile" 
                 className="relative rounded-full w-64 h-64 mx-auto object-cover shadow-xl border-4 border-white"
               />
