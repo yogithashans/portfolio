@@ -1,19 +1,26 @@
-import React, { useRef } from 'react';
-import { Github, Linkedin, Mail, MapPin, ArrowRight, Code2, Sparkles } from 'lucide-react';
-import { motion } from 'framer-motion';
-import profileImg from "../assets/IMG_20241225_203428.png"
+import React, { useRef } from "react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  ArrowRight,
+  Code2,
+  Sparkles,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import profileImg from "../assets/IMG_20241225_203428.png";
 
-const Hero = ({focusInput}:{focusInput:()=>void}) => {
+const Hero = ({ focusInput }: { focusInput: () => void }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
   };
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
-
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50">
@@ -47,41 +54,56 @@ const Hero = ({focusInput}:{focusInput:()=>void}) => {
               <span className="text-sm font-medium">Front-End Developer</span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               className="text-5xl md:text-6xl font-bold mb-6"
               variants={textVariants}
             >
               <span className="inline-block">
-                Hi, I'm{' '}
+                Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">
                   Yogitha
                 </span>
               </span>
               <motion.span
                 className="inline-block text-indigo-600 ml-2"
-                animate={{ 
+                animate={{
                   rotate: [0, 15, -15, 0],
-                  transition: { 
+                  transition: {
                     duration: 1.5,
                     repeat: Infinity,
-                    repeatType: "reverse"
-                  }
+                    repeatType: "reverse",
+                  },
                 }}
               >
                 👋
               </motion.span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               className="text-xl text-gray-600 mb-8 leading-relaxed"
               variants={textVariants}
             >
-              Crafting beautiful and intuitive web experiences with{' '}
-              <span className="text-indigo-600 font-semibold">React</span> and{' '}
+              {/* Crafting beautiful and intuitive web experiences with{' '} */}
+              Crafting seamless web and mobile applications with{" "}
+              <span className="text-indigo-600 font-semibold">React</span>,{" "}
+              <span className="text-indigo-600 font-semibold">
+                React Native
+              </span>
+              , and{" "}
               <span className="text-indigo-600 font-semibold">TypeScript</span>.
             </motion.p>
 
-            <motion.div 
+            <motion.p
+              className="text-xl text-gray-600 mb-8 leading-relaxed"
+              variants={textVariants}
+            >
+              Bridging ideas into{" "}
+              <span className="text-indigo-600 font-semibold">
+                intuitive digital experiences 🚀
+              </span>
+            </motion.p>
+
+            <motion.div
               className="flex items-center justify-center md:justify-start gap-4 mb-8"
               variants={textVariants}
             >
@@ -105,30 +127,43 @@ const Hero = ({focusInput}:{focusInput:()=>void}) => {
               </motion.a>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="flex space-x-4 justify-center md:justify-start"
               variants={textVariants}
             >
-              <motion.a 
+              <motion.a
                 href="mailto:yogithashans@gmail.com"
                 className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
+              
               >
                 <Mail size={20} className="text-gray-600" />
               </motion.a>
-              <motion.a 
+              <motion.a
                 href="https://linkedin.com/in/yogitha-shanmugam"
                 className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
+                target="_blank"
+  rel="noopener noreferrer"
               >
                 <Linkedin size={20} className="text-gray-600" />
+              </motion.a>
+              <motion.a
+                href="https://github.com/yogithashans"
+                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileTap={{ scale: 0.95 }}
+                target="_blank"
+  rel="noopener noreferrer"
+              >
+                <Github size={20} className="text-gray-600" />
               </motion.a>
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="md:w-1/2 relative"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -139,18 +174,18 @@ const Hero = ({focusInput}:{focusInput:()=>void}) => {
                 className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full opacity-20 blur-2xl"
                 animate={{
                   scale: [1, 1.1, 1],
-                  opacity: [0.2, 0.3, 0.2]
+                  opacity: [0.2, 0.3, 0.2],
                 }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
-                  repeatType: "reverse"
+                  repeatType: "reverse",
                 }}
               />
-              <img 
-                // src="/profile-image.jpg" 
+              <img
+                // src="/profile-image.jpg"
                 src="/portfolio/IMG_20241225_203428.png"
-                alt="Profile" 
+                alt="Profile"
                 className="relative rounded-full w-64 h-64 mx-auto object-cover shadow-xl border-4 border-white"
               />
             </div>

@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./app.css";
+import FeaturedProjects from "./components/FeaturedProjects";
 
 function App() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -28,7 +29,8 @@ function App() {
       <About />
       <Experience />
       <Skills />
-      <Projects />
+      <FeaturedProjects />
+      {/* <Projects /> */}
       <Contact inputRef={inputRef} connectRef={connectRef} />
     </div>
   );
