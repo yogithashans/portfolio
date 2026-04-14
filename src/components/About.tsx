@@ -52,7 +52,7 @@ const About = () => {
               specializing in building dynamic, user-friendly web applications. Experienced in integrating Graph API and REST APIs
               for data handling. Seeking a challenging role to contribute to organizational growth while further enhancing my technical skills
               and expertise. */}
-              A results-driven Front-End Developer with 1.3 years of experience
+              A results-driven Front-End Developer with 2.6 years of experience
               in React.js, React Native, TypeScript, and Redux. Dedicated to
               building sleek, user-centric applications and ensuring seamless
               API integrations. Passionate about clean code, intuitive design,

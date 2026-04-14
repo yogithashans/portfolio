@@ -4,21 +4,30 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Front-End Developer",
-    company: "Energetics.ai Private Limited",
-    period: "Nov 2023 - Present",
+    title: "Software Engineer II",
+    company: "Blackdart Labs Private Limited",
+    period: "Mar 2026 - Present",
     description: [
-      // "Designed and developed high-performance dashboards with React and TypeScript",
-      // "Implemented OAuth for Instagram, Facebook, and YouTube",
-      // "Developed highly scalable components reducing future development time by 30%",
-      // "Integrated WebSocket for live updates and notifications",
-      // "Automated testing using Playwright and Selenium",
+      "Developing AI-powered enterprise dashboards using React, TypeScript, and GraphQL",
+      "Building Admin and Customer dashboards with dynamic real-time data updates",
+      "Optimizing performance for large datasets using memoization and lazy loading",
+      "Designing scalable and reusable component architecture",
+      "Integrating GraphQL APIs for seamless real-time synchronization",
+      "Performed validation and testing of AI-generated code, identifying issues and improving output reliability",
+      "Contributed to prompt engineering strategies to enhance the quality, accuracy, and consistency of AI-generated code",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company: "Energetics.ai Private Limited",
+    period: "Nov 2023 - Feb 2026",
+    description: [
       "Developed responsive web and mobile applications using React, React Native, and TypeScript",
       "Optimized API integrations for improved performance and seamless user experiences",
-      "Implemented WebSocket for real-time updates and live notifications, enhancing interactivity",
+      "Implemented WebSocket for real-time updates and live notifications",
       "Worked with Redux for efficient state management across platforms",
-      "Automated UI and functional testing, reducing manual efforts by 40% using Playwright and Selenium",
-      "Integrated OAuth for secure authentication with Instagram, Facebook, and YouTube APIs",
+      "Automated UI and functional testing reducing manual efforts by 40%",
+      "Integrated OAuth for Instagram, Facebook, and YouTube APIs",
     ],
   },
   {

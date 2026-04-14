@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Brain, Car, ExternalLink, Github, ShoppingBagIcon, ShoppingCart } from "lucide-react";
+import {
+  Brain,
+  Car,
+  ExternalLink,
+  Github,
+  ShoppingBagIcon,
+  ShoppingCart,
+} from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -66,43 +73,74 @@ const cardVariants = {
 // ];
 const projects = [
   {
-    title: "Splendid",
-    tech: ["React", "React Native", "TypeScript", "Redux", "OAuth"],
+    title: "Blackdart (AI Platform)",
+    tech: ["React", "TypeScript", "GraphQL", "Redux", "AI"],
     highlights: [
-      "Engineered a scalable and high-performance platform using React and TypeScript.",
-      "Integrated OAuth for secure authentication with social media APIs.",
-      "Developed reusable components that accelerated front-end development.",
-      "Enhanced API performance through optimized data-fetching techniques.",
-      "Supported React Native integration for cross-platform functionality.",
+      "Developed AI-powered enterprise dashboards for automated data monitoring and analytics.",
+      "Built Admin and Customer dashboards with real-time updates and dynamic UI workflows.",
+      "Integrated GraphQL APIs for efficient data fetching and synchronization.",
+      "Optimized large-scale applications using memoization, lazy loading, and state management.",
+      "Performed validation and testing of AI-generated code to ensure accuracy and reliability.",
+      "Contributed to prompt engineering to improve the quality and consistency of AI-generated outputs.",
     ],
-    icon: <ShoppingCart className="text-indigo-600" size={24} />,
+    icon: <Brain className="text-indigo-600" size={24} />,
   },
   {
-    title: "Keyon",
-    tech: ["React", "TypeScript", "GraphQL", "Redux"],
+    title: "GeneAura",
+    tech: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "GraphQL",
+      "Tailwind",
+      "Framer Motion",
+    ],
     highlights: [
-      "Created a highly responsive and dynamic front-end using React and Redux.",
-      "Integrated GraphQL and REST APIs to manage and display complex data.",
-      "Improved scalability by designing modular and reusable components.",
-      "Implemented state management solutions for smooth cross-platform functionality.",
-      "Optimized the app’s load time and performance using code splitting and lazy loading.",
+      "Developed Admin, Customer, and Partner dashboards with role-based access control (RBAC).",
+      "Built a unified mobile–web responsive UI for seamless cross-device experience.",
+      "Integrated GraphQL with backend-driven sorting and pagination for scalability.",
+      "Designed optimized workflows for different user roles improving usability and efficiency.",
+      "Implemented responsive layouts tailored specifically for mobile-first experiences.",
+    ],
+    icon: <Brain className="text-indigo-600" size={24} />,
+  },
+  {
+    title: "NTL Management Suite",
+    tech: ["React", "React Native", "TypeScript", "Redux", "Google Maps"],
+    highlights: [
+      "Developed responsive web interfaces using React, Redux, and modern UI libraries.",
+      "Contributed to cross-platform mobile applications using React Native.",
+      "Integrated Google Maps for accurate location selection and address handling.",
+      "Connected REST and GraphQL APIs for real-time data operations.",
+      "Enhanced usability with scalable and user-friendly UI components.",
     ],
     icon: <Car className="text-indigo-600" size={24} />,
   },
   {
-    title: "Witmer",
-    tech: ["React", "TypeScript", "WebSocket", "Playwright"],
+    title: "Splendid",
+    tech: ["React", "TypeScript", "Redux", "OAuth"],
     highlights: [
-      "Developed a feature-rich, real-time application using WebSocket and React.",
-      "Engineered dynamic UIs with advanced component structures for scalability.",
-      "Implemented Playwright and Selenium for automated UI and functional testing.",
-      "Ensured smooth data sync and real-time updates with WebSocket integration.",
-      "Optimized front-end performance, reducing load times and resource consumption.",
+      "Built a high-performance admin dashboard using React and TypeScript.",
+      "Contributed to brand dashboard development with optimized API integrations.",
+      "Implemented OAuth authentication for Instagram, Facebook, and YouTube APIs.",
+      "Designed reusable and scalable components to accelerate development.",
+      "Improved application performance through efficient state and API handling.",
+    ],
+    icon: <ShoppingCart className="text-indigo-600" size={24} />,
+  },
+  {
+    title: "Witmer",
+    tech: ["React", "TypeScript", "WebSocket", "Playwright", "Selenium"],
+    highlights: [
+      "Built dynamic UI with real-time features using WebSocket integration.",
+      "Implemented automated UI and functional testing using Playwright and Selenium.",
+      "Ensured seamless real-time data synchronization across modules.",
+      "Developed scalable component structures for complex workflows.",
+      "Optimized performance and reduced load times across the application.",
     ],
     icon: <Brain className="text-indigo-600" size={24} />,
   },
 ];
-
 
 export default function FeaturedProjects() {
   const [ref, inView] = useInView({
