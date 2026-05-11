@@ -23,6 +23,20 @@ const About = () => {
       },
     },
   };
+  const startDate = new Date("2023-11-01");
+  const currentDate = new Date();
+
+  let totalMonths =
+    (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (currentDate.getMonth() - startDate.getMonth());
+
+  if (currentDate.getDate() > 1) {
+    totalMonths += 1;
+  }
+
+  totalMonths += 1;
+
+  const experienceYears = (totalMonths / 12).toFixed(1);
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -52,11 +66,12 @@ const About = () => {
               specializing in building dynamic, user-friendly web applications. Experienced in integrating Graph API and REST APIs
               for data handling. Seeking a challenging role to contribute to organizational growth while further enhancing my technical skills
               and expertise. */}
-              A results-driven Front-End Developer with 2.6 years of experience
-              in React.js, React Native, TypeScript, and Redux. Dedicated to
-              building sleek, user-centric applications and ensuring seamless
-              API integrations. Passionate about clean code, intuitive design,
-              and crafting solutions that make a lasting impact.
+              A results-driven Front-End Developer with {experienceYears} years
+              of experience in React.js, React Native, TypeScript, and Redux.
+              Dedicated to building sleek, user-centric applications and
+              ensuring seamless API integrations. Passionate about clean code,
+              intuitive design, and crafting solutions that make a lasting
+              impact.
             </motion.p>
             <div className="grid grid-cols-2 gap-4">
               <motion.div
